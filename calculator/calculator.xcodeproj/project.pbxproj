@@ -15,6 +15,13 @@
 		9661E79A1C0E9916006B892C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9661E7981C0E9916006B892C /* LaunchScreen.storyboard */; };
 		9661E7A51C0E9916006B892C /* calculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9661E7A41C0E9916006B892C /* calculatorTests.m */; };
 		9661E7B01C0E9916006B892C /* calculatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9661E7AF1C0E9916006B892C /* calculatorUITests.m */; };
+		96FDE0B41C0EDEF700518A4C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FDE0B31C0EDEF700518A4C /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
+		96FDE0BB1C0EE35900518A4C /* CNCNnumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FDE0BA1C0EE35900518A4C /* CNCNnumberView.m */; settings = {ASSET_TAGS = (); }; };
+		96FDE0BE1C0EF28200518A4C /* CNCNHandelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FDE0BD1C0EF28200518A4C /* CNCNHandelView.m */; settings = {ASSET_TAGS = (); }; };
+		96FDE0C11C0F085700518A4C /* CNCNResultVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FDE0C01C0F085700518A4C /* CNCNResultVIew.m */; settings = {ASSET_TAGS = (); }; };
+		96FDE0C41C0F0B4E00518A4C /* CNCNFunctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FDE0C31C0F0B4E00518A4C /* CNCNFunctionView.m */; settings = {ASSET_TAGS = (); }; };
+		96FDE0C71C0F0D5E00518A4C /* CNCNDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FDE0C61C0F0D5E00518A4C /* CNCNDataView.m */; settings = {ASSET_TAGS = (); }; };
+		96FDE0CA1C0F0F7700518A4C /* CNCNLastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FDE0C91C0F0F7700518A4C /* CNCNLastView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,20 @@
 		9661E7AB1C0E9916006B892C /* calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9661E7AF1C0E9916006B892C /* calculatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = calculatorUITests.m; sourceTree = "<group>"; };
 		9661E7B11C0E9916006B892C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96FDE0B21C0EDEF700518A4C /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		96FDE0B31C0EDEF700518A4C /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		96FDE0B91C0EE35900518A4C /* CNCNnumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNCNnumberView.h; sourceTree = "<group>"; };
+		96FDE0BA1C0EE35900518A4C /* CNCNnumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNCNnumberView.m; sourceTree = "<group>"; };
+		96FDE0BC1C0EF28200518A4C /* CNCNHandelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNCNHandelView.h; sourceTree = "<group>"; };
+		96FDE0BD1C0EF28200518A4C /* CNCNHandelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNCNHandelView.m; sourceTree = "<group>"; };
+		96FDE0BF1C0F085700518A4C /* CNCNResultVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNCNResultVIew.h; sourceTree = "<group>"; };
+		96FDE0C01C0F085700518A4C /* CNCNResultVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNCNResultVIew.m; sourceTree = "<group>"; };
+		96FDE0C21C0F0B4E00518A4C /* CNCNFunctionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNCNFunctionView.h; sourceTree = "<group>"; };
+		96FDE0C31C0F0B4E00518A4C /* CNCNFunctionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNCNFunctionView.m; sourceTree = "<group>"; };
+		96FDE0C51C0F0D5E00518A4C /* CNCNDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNCNDataView.h; sourceTree = "<group>"; };
+		96FDE0C61C0F0D5E00518A4C /* CNCNDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNCNDataView.m; sourceTree = "<group>"; };
+		96FDE0C81C0F0F7700518A4C /* CNCNLastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNCNLastView.h; sourceTree = "<group>"; };
+		96FDE0C91C0F0F7700518A4C /* CNCNLastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNCNLastView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +122,8 @@
 		9661E7891C0E9916006B892C /* calculator */ = {
 			isa = PBXGroup;
 			children = (
+				96FDE0B11C0EDEEE00518A4C /* Category */,
+				96FDE0B81C0EE30C00518A4C /* VIew */,
 				9661E78D1C0E9916006B892C /* AppDelegate.h */,
 				9661E78E1C0E9916006B892C /* AppDelegate.m */,
 				9661E7901C0E9916006B892C /* ViewController.h */,
@@ -138,6 +161,34 @@
 				9661E7B11C0E9916006B892C /* Info.plist */,
 			);
 			path = calculatorUITests;
+			sourceTree = "<group>";
+		};
+		96FDE0B11C0EDEEE00518A4C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				96FDE0B21C0EDEF700518A4C /* UIView+Extension.h */,
+				96FDE0B31C0EDEF700518A4C /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		96FDE0B81C0EE30C00518A4C /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				96FDE0B91C0EE35900518A4C /* CNCNnumberView.h */,
+				96FDE0BA1C0EE35900518A4C /* CNCNnumberView.m */,
+				96FDE0BC1C0EF28200518A4C /* CNCNHandelView.h */,
+				96FDE0BD1C0EF28200518A4C /* CNCNHandelView.m */,
+				96FDE0BF1C0F085700518A4C /* CNCNResultVIew.h */,
+				96FDE0C01C0F085700518A4C /* CNCNResultVIew.m */,
+				96FDE0C21C0F0B4E00518A4C /* CNCNFunctionView.h */,
+				96FDE0C31C0F0B4E00518A4C /* CNCNFunctionView.m */,
+				96FDE0C51C0F0D5E00518A4C /* CNCNDataView.h */,
+				96FDE0C61C0F0D5E00518A4C /* CNCNDataView.m */,
+				96FDE0C81C0F0F7700518A4C /* CNCNLastView.h */,
+				96FDE0C91C0F0F7700518A4C /* CNCNLastView.m */,
+			);
+			path = VIew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +253,7 @@
 		9661E77F1C0E9916006B892C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CNCN;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = cncn;
 				TargetAttributes = {
@@ -273,8 +325,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96FDE0C41C0F0B4E00518A4C /* CNCNFunctionView.m in Sources */,
+				96FDE0C11C0F085700518A4C /* CNCNResultVIew.m in Sources */,
 				9661E7921C0E9916006B892C /* ViewController.m in Sources */,
+				96FDE0C71C0F0D5E00518A4C /* CNCNDataView.m in Sources */,
 				9661E78F1C0E9916006B892C /* AppDelegate.m in Sources */,
+				96FDE0BB1C0EE35900518A4C /* CNCNnumberView.m in Sources */,
+				96FDE0B41C0EDEF700518A4C /* UIView+Extension.m in Sources */,
+				96FDE0BE1C0EF28200518A4C /* CNCNHandelView.m in Sources */,
+				96FDE0CA1C0F0F7700518A4C /* CNCNLastView.m in Sources */,
 				9661E78C1C0E9916006B892C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +415,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -398,6 +458,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -501,6 +562,7 @@
 				9661E7B61C0E9916006B892C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9661E7B71C0E9916006B892C /* Build configuration list for PBXNativeTarget "calculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +571,7 @@
 				9661E7B91C0E9916006B892C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9661E7BA1C0E9916006B892C /* Build configuration list for PBXNativeTarget "calculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +580,7 @@
 				9661E7BC1C0E9916006B892C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
