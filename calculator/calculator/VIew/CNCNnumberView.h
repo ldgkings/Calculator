@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@class CNCNnumberView;
 
+@protocol CNCNnumberViewDelegate <NSObject>
+@optional
+- (void)numberView:(CNCNnumberView *)numberView didClickNumberBtn:(UIButton *)btn;
+
+@end
 @interface CNCNnumberView : UIView
 
+@property (nonatomic,weak)id<CNCNnumberViewDelegate> delegate;
 @end

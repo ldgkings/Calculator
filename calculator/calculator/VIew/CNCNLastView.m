@@ -20,7 +20,7 @@
         
         [self setUpBtnWithTitle:@"a" tag:CNCNLastViewTypeA];
         [self setUpBtnWithTitle:@"b" tag:CNCNLastViewTypeB];
-        [self setUpBtnWithTitle:@"x" tag:CNCNLastViewTypeX];
+        [self setUpBtnWithTitle:@"1/x" tag:CNCNLastViewTypeX];
         [self setUpBtnWithTitle:@"c" tag:CNCNLastViewTypeC];
     }
     return self;
@@ -29,6 +29,7 @@
 - (UIButton *)setUpBtnWithTitle:(NSString *)title tag:(CNCNLastViewType )tag
 {
     UIButton *btn = [[UIButton alloc] init];
+    [btn addTarget:self action:@selector(btnDidClick:) forControlEvents:UIControlEventTouchDown];
     btn.backgroundColor = [UIColor lightGrayColor];
     btn.titleLabel.font = [UIFont systemFontOfSize:30];
     [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
@@ -55,5 +56,10 @@
     }
 }
 
-
+- (void)btnDidClick:(UIButton *)btn
+{
+    if ([self.delegate respondsToSelector:@selector(lastView:btnDidClick:)]) {
+        [self.delegate lastView:self btnDidClick:btn];
+    }
+}
 @end

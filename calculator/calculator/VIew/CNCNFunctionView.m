@@ -17,11 +17,10 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-        
-        [self setUpBtnWithTitle:@"sqrt" tag:CNCNResultVIewTypeSqrt];
-        [self setUpBtnWithTitle:@"sin" tag:CNCNResultVIewTypeSin];
-        [self setUpBtnWithTitle:@"cos" tag:CNCNResultVIewTypeCos];
-        [self setUpBtnWithTitle:@"π" tag:CNCNResultVIewTypePai];
+        [self setUpBtnWithTitle:@"sqrt" tag:CNCNFunctionViewTypeSqrt];
+        [self setUpBtnWithTitle:@"sin" tag:CNCNFunctionViewTypeSin];
+        [self setUpBtnWithTitle:@"cos" tag:CNCNFunctionViewTypeCos];
+        [self setUpBtnWithTitle:@"π" tag:CNCNFunctionViewTypePai];
     }
     return self;
 }
@@ -29,6 +28,7 @@
 - (UIButton *)setUpBtnWithTitle:(NSString *)title tag:(CNCNFunctionViewType )tag
 {
     UIButton *btn = [[UIButton alloc] init];
+    [btn addTarget:self action:@selector(btnDidClick:) forControlEvents:UIControlEventTouchDown];
     btn.backgroundColor = [UIColor lightGrayColor];
     btn.titleLabel.font = [UIFont systemFontOfSize:30];
     [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
@@ -52,5 +52,10 @@
     }
 }
 
-
+- (void)btnDidClick:(UIButton *)btn
+{
+    if ([self.delegate respondsToSelector:@selector(functionView:btnDidClick:)]) {
+        [self.delegate functionView:self btnDidClick:btn];
+    }
+}
 @end

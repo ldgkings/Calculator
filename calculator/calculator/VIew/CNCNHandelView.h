@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
 typedef enum {
     /**	+ */
     CNCNHandelViewButtonTypeAdd,
@@ -21,6 +20,14 @@ typedef enum {
 
 } CNCNHandelViewButtonType;
 
+@class CNCNHandelView;
+
+@protocol CNCNHandelViewDelegate <NSObject>
+@optional
+- (void)handelView:(CNCNHandelView *)handelView didClicHandelBtn:(UIButton *)btn;
+@end
+
 @interface CNCNHandelView : UIView
+@property (nonatomic,weak)id<CNCNHandelViewDelegate> delegate;
 
 @end

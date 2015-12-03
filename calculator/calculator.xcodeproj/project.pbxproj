@@ -15,6 +15,8 @@
 		9661E79A1C0E9916006B892C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9661E7981C0E9916006B892C /* LaunchScreen.storyboard */; };
 		9661E7A51C0E9916006B892C /* calculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9661E7A41C0E9916006B892C /* calculatorTests.m */; };
 		9661E7B01C0E9916006B892C /* calculatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9661E7AF1C0E9916006B892C /* calculatorUITests.m */; };
+		9669A6AF1C0FDF030009401A /* CNCNHandelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9669A6AE1C0FDF030009401A /* CNCNHandelTool.m */; settings = {ASSET_TAGS = (); }; };
+		9669A6B21C0FDFF20009401A /* CNCNOpration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9669A6B11C0FDFF20009401A /* CNCNOpration.m */; settings = {ASSET_TAGS = (); }; };
 		96FDE0B41C0EDEF700518A4C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FDE0B31C0EDEF700518A4C /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
 		96FDE0BB1C0EE35900518A4C /* CNCNnumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FDE0BA1C0EE35900518A4C /* CNCNnumberView.m */; settings = {ASSET_TAGS = (); }; };
 		96FDE0BE1C0EF28200518A4C /* CNCNHandelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FDE0BD1C0EF28200518A4C /* CNCNHandelView.m */; settings = {ASSET_TAGS = (); }; };
@@ -58,6 +60,10 @@
 		9661E7AB1C0E9916006B892C /* calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9661E7AF1C0E9916006B892C /* calculatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = calculatorUITests.m; sourceTree = "<group>"; };
 		9661E7B11C0E9916006B892C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9669A6AD1C0FDF030009401A /* CNCNHandelTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNCNHandelTool.h; sourceTree = "<group>"; };
+		9669A6AE1C0FDF030009401A /* CNCNHandelTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNCNHandelTool.m; sourceTree = "<group>"; };
+		9669A6B01C0FDFF20009401A /* CNCNOpration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNCNOpration.h; sourceTree = "<group>"; };
+		9669A6B11C0FDFF20009401A /* CNCNOpration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNCNOpration.m; sourceTree = "<group>"; };
 		96FDE0B21C0EDEF700518A4C /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		96FDE0B31C0EDEF700518A4C /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		96FDE0B91C0EE35900518A4C /* CNCNnumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNCNnumberView.h; sourceTree = "<group>"; };
@@ -122,6 +128,7 @@
 		9661E7891C0E9916006B892C /* calculator */ = {
 			isa = PBXGroup;
 			children = (
+				9669A6AC1C0FDEBD0009401A /* Tool */,
 				96FDE0B11C0EDEEE00518A4C /* Category */,
 				96FDE0B81C0EE30C00518A4C /* VIew */,
 				9661E78D1C0E9916006B892C /* AppDelegate.h */,
@@ -163,9 +170,28 @@
 			path = calculatorUITests;
 			sourceTree = "<group>";
 		};
+		9669A6AB1C0FDE8A0009401A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		9669A6AC1C0FDEBD0009401A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				9669A6AD1C0FDF030009401A /* CNCNHandelTool.h */,
+				9669A6AE1C0FDF030009401A /* CNCNHandelTool.m */,
+				9669A6B01C0FDFF20009401A /* CNCNOpration.h */,
+				9669A6B11C0FDFF20009401A /* CNCNOpration.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		96FDE0B11C0EDEEE00518A4C /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				9669A6AB1C0FDE8A0009401A /* Tool */,
 				96FDE0B21C0EDEF700518A4C /* UIView+Extension.h */,
 				96FDE0B31C0EDEF700518A4C /* UIView+Extension.m */,
 			);
@@ -328,11 +354,13 @@
 				96FDE0C41C0F0B4E00518A4C /* CNCNFunctionView.m in Sources */,
 				96FDE0C11C0F085700518A4C /* CNCNResultVIew.m in Sources */,
 				9661E7921C0E9916006B892C /* ViewController.m in Sources */,
+				9669A6B21C0FDFF20009401A /* CNCNOpration.m in Sources */,
 				96FDE0C71C0F0D5E00518A4C /* CNCNDataView.m in Sources */,
 				9661E78F1C0E9916006B892C /* AppDelegate.m in Sources */,
 				96FDE0BB1C0EE35900518A4C /* CNCNnumberView.m in Sources */,
 				96FDE0B41C0EDEF700518A4C /* UIView+Extension.m in Sources */,
 				96FDE0BE1C0EF28200518A4C /* CNCNHandelView.m in Sources */,
+				9669A6AF1C0FDF030009401A /* CNCNHandelTool.m in Sources */,
 				96FDE0CA1C0F0F7700518A4C /* CNCNLastView.m in Sources */,
 				9661E78C1C0E9916006B892C /* main.m in Sources */,
 			);

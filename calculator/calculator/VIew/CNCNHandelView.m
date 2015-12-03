@@ -21,7 +21,7 @@
         
         [self setUpBtnWithTitle:@"+" tag:CNCNHandelViewButtonTypeAdd];
         [self setUpBtnWithTitle:@"-" tag:CNCNHandelViewButtonTypeMinus];
-        [self setUpBtnWithTitle:@"×" tag:CNCNHandelViewButtonTypeMultiply];
+        [self setUpBtnWithTitle:@"x" tag:CNCNHandelViewButtonTypeMultiply];
         [self setUpBtnWithTitle:@"/" tag:CNCNHandelViewButtonTypeDivide];
         }
     return self;
@@ -30,6 +30,7 @@
 - (UIButton *)setUpBtnWithTitle:(NSString *)title tag:(CNCNHandelViewButtonType )tag
 {
     UIButton *btn = [[UIButton alloc] init];
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchDown];
     btn.backgroundColor = [UIColor orangeColor];
     btn.titleLabel.font = [UIFont systemFontOfSize:30];
     if (tag == CNCNHandelViewButtonTypeDivide) {
@@ -53,6 +54,13 @@
         CGFloat numBtnY = KsingleUIButtonH * i ;
         numBtn.frame = CGRectMake(0, numBtnY, numBtnW, numBtnH);
         
+    }
+}
+
+- (void)btnClick:(UIButton *)btn
+{
+    if ([self.delegate respondsToSelector:@selector(handelView:didClicHandelBtn:)]) {
+        [self.delegate handelView:self didClicHandelBtn:btn];
     }
 }
 

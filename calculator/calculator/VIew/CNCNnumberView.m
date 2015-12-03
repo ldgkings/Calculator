@@ -27,6 +27,7 @@
 {
     for (int i = 1; i < 10; i++) {
         UIButton *numBtn = [[UIButton alloc] init];
+        [numBtn addTarget:self action:@selector(numBtnClick:) forControlEvents:UIControlEventTouchDown];
         NSString *string = [NSString stringWithFormat:@"%d",i];
         [numBtn setTitle:string forState:UIControlStateNormal];
         [numBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -52,6 +53,15 @@
         numBtn.frame = CGRectMake(numBtnX, numBtnY, numBtnW, numBtnH);
         
     }
+}
+
+- (void)numBtnClick:(UIButton *)btn
+{
+    if ([self.delegate respondsToSelector:@selector(numberView:didClickNumberBtn:)]) {
+        [self.delegate numberView:self didClickNumberBtn:btn
+         ];
+    }
+    
 }
 
 @end

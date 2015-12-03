@@ -28,6 +28,7 @@
 - (UIButton *)setUpBtnWithTitle:(NSString *)title tag:(CNCNDataViewType )tag
 {
     UIButton *btn = [[UIButton alloc] init];
+    [btn addTarget:self action:@selector(btnDidClick:) forControlEvents:UIControlEventTouchDown];
     btn.backgroundColor = [UIColor lightGrayColor];
     btn.titleLabel.font = [UIFont systemFontOfSize:25];
     [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
@@ -47,9 +48,13 @@
         UIButton *numBtn = self.subviews[i];
         CGFloat numBtnX = KSingleUIButtonW * i ;
         numBtn.frame = CGRectMake(numBtnX, 0, numBtnW, numBtnH);
-        
     }
 }
 
-
+- (void)btnDidClick:(UIButton *)btn
+{
+    if ([self.delegate respondsToSelector:@selector(dataView:btnDidClick:)]) {
+        [self.delegate dataView:self btnDidClick:btn];
+    }
+}
 @end

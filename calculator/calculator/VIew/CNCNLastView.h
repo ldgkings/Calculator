@@ -15,6 +15,17 @@ typedef enum {
     CNCNLastViewTypeC
 } CNCNLastViewType;
 
+@class CNCNLastView;
+
+@protocol CNCNLastViewDelegate <NSObject>
+
+@optional
+- (void)lastView:(CNCNLastView *)lastView btnDidClick:(UIButton *)btn;
+
+@end
+
 @interface CNCNLastView : UIView
+
+@property (weak ,nonatomic) id<CNCNLastViewDelegate> delegate;
 
 @end

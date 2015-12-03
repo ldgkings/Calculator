@@ -11,18 +11,22 @@
 #import <UIKit/UIKit.h>
 
 typedef enum {
-    /**	sqrt */
-    CNCNResultVIewTypeSqrt,
-    /**	sin */
-    CNCNResultVIewTypeSin,
-    /**	cos */
-    CNCNResultVIewTypeCos,
-    /**	π */
-    CNCNResultVIewTypePai
+    CNCNFunctionViewTypeSqrt,
+  
+    CNCNFunctionViewTypeSin,
+   
+    CNCNFunctionViewTypeCos,
+  
+    CNCNFunctionViewTypePai
     
 } CNCNFunctionViewType;
 
+@class CNCNFunctionView;
+@protocol CNCNFunctionViewDelegate <NSObject>
+
+- (void)functionView:(CNCNFunctionView *)functionView btnDidClick:(UIButton *)btn;
+@end
 
 @interface CNCNFunctionView : UIView
-
+@property (weak ,nonatomic) id<CNCNFunctionViewDelegate> delegate;
 @end

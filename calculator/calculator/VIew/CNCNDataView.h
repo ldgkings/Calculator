@@ -15,6 +15,14 @@ typedef enum {
     CNCNDataViewTypeAddMinus
 } CNCNDataViewType;
 
-@interface CNCNDataView : UIView
+@class CNCNDataView;
 
+@protocol CNCNDataViewDelegate <NSObject>
+
+- (void)dataView:(CNCNDataView *)dataView btnDidClick:(UIButton *)btn;
+
+@end
+
+@interface CNCNDataView : UIView
+@property (weak ,nonatomic) id<CNCNDataViewDelegate> delegate;
 @end

@@ -28,6 +28,7 @@
 - (UIButton *)setUpBtnWithTitle:(NSString *)title tag:(CNCNResultVIewType )tag
 {
     UIButton *btn = [[UIButton alloc] init];
+    [btn addTarget:self action:@selector(btnDidClick:) forControlEvents:UIControlEventTouchDown];
     btn.backgroundColor = [UIColor whiteColor];
     btn.titleLabel.font = [UIFont systemFontOfSize:30];
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -48,6 +49,13 @@
         CGFloat numBtnX = KSingleUIButtonW * i ;
         numBtn.frame = CGRectMake(numBtnX, 0, numBtnW, numBtnH);
         
+    }
+}
+
+- (void)btnDidClick:(UIButton *)btn
+{
+    if ([self.delegate respondsToSelector:@selector(resultView:didClickBtn:)]) {
+        [self.delegate resultView:self didClickBtn:btn];
     }
 }
 @end

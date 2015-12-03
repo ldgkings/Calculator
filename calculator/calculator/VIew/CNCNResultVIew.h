@@ -18,6 +18,15 @@ typedef enum {
   
 } CNCNResultVIewType;
 
+@class CNCNResultVIew;
+
+@protocol CNCNResultVIewDelegate <NSObject>
+@optional
+- (void)resultView:(CNCNResultVIew *)resultView didClickBtn:(UIButton *)btn;
+@end
+
 @interface CNCNResultVIew : UIView
+
+@property (nonatomic,weak)id<CNCNResultVIewDelegate> delegate;
 
 @end
