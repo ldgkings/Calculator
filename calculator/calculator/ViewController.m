@@ -302,8 +302,13 @@
 // sqtr(开方)
 - (void)handelSqtr
 {
-    double  b =  sin(M_PI/(180/30));
-    NSLog(@"%f",b);
+    double d  = [self.showView.text doubleValue];
+    if (d == 0)   return;
+    double result = 0;
+    result = sqrt(d);
+    [self.result setString:@""];
+    [self.result appendFormat:@"%lf",result];
+    [self handelLastShow];
 }
 
 // sin
@@ -413,7 +418,6 @@
     self.num = 0;
     self.showView.text = self.result;
 }
-
 
 ///--------------------------------------
 #pragma mark - public

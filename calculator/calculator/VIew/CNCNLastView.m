@@ -17,7 +17,6 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-        
         [self setUpBtnWithTitle:@"a" tag:CNCNLastViewTypeA];
         [self setUpBtnWithTitle:@"b" tag:CNCNLastViewTypeB];
         [self setUpBtnWithTitle:@"1/x" tag:CNCNLastViewTypeX];
@@ -31,7 +30,7 @@
     UIButton *btn = [[UIButton alloc] init];
     [btn addTarget:self action:@selector(btnDidClick:) forControlEvents:UIControlEventTouchDown];
     btn.backgroundColor = [UIColor lightGrayColor];
-    btn.titleLabel.font = [UIFont systemFontOfSize:30];
+    btn.titleLabel.font = [UIFont systemFontOfSize:35];
     [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     if (tag == CNCNLastViewTypeC) {
         [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];

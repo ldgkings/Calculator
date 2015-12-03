@@ -13,16 +13,16 @@
 -(id)initWithNum1:(double)num1 Num2:(double)num2
 {
     if ([super init]) {
-        self.number1=num1;
-        self.number2=num2;
+        self.number1 = num1;
+        self.number2 = num2;
     }
     return self;
 }
 //父类的运算
 -(NSString*)getResult
 {
-    double result=0;
-    NSString *str=[NSString stringWithFormat:@"%lf",result];
+    double result = 0;
+    NSString *str = [NSString stringWithFormat:@"%lf",result];
     return str;
 }
 
@@ -32,8 +32,8 @@
 -(NSString*)getResult
 {
     double result=0;
-    result= self.number1+self.number2;
-    NSString *str=[NSString stringWithFormat:@"%lf",result];
+    result = self.number1 + self.number2;
+    NSString *str = [NSString stringWithFormat:@"%lf",result];
     return str;
 }
 @end
@@ -42,8 +42,8 @@
 -(NSString*)getResult
 {
     double result=0;
-    result= self.number1-self.number2;
-    NSString *str=[NSString stringWithFormat:@"%lf",result];
+    result= self.number1 - self.number2;
+    NSString *str = [NSString stringWithFormat:@"%lf",result];
     return str;
 }
 @end
@@ -51,9 +51,9 @@
 @implementation OprationMul
 -(NSString*)getResult
 {
-    double result=0;
-    result= self.number1*self.number2;
-    NSString *str=[NSString stringWithFormat:@"%lf",result];
+    double result = 0;
+    result = self.number1 * self.number2;
+    NSString *str = [NSString stringWithFormat:@"%lf",result];
     return str;
 }
 @end
@@ -61,13 +61,13 @@
 @implementation OprationDiv
 -(NSString*)getResult
 {
-    double result=0;
+    double result = 0;
     NSString *str;
-    if (self.number2==0) {
-        str=[NSString stringWithFormat:@"错误"];
+    if (self.number2 == 0) {
+        str = [NSString stringWithFormat:@"错误"];
     }else{
-        result= self.number1/self.number2;
-        str=[NSString stringWithFormat:@"%lf",result];
+        result = self.number1/self.number2;
+        str = [NSString stringWithFormat:@"%lf",result];
     }
     return str;
     
