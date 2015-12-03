@@ -31,10 +31,10 @@
 @property (weak ,nonatomic) CNCNResultVIew *resultVIew;
 @property (weak ,nonatomic) CNCNFunctionView *functionView;
 @property (weak ,nonatomic) CNCNDataView *dataView;
-@property (weak ,nonatomic)CNCNLastView *lastView;
+@property (weak ,nonatomic) CNCNLastView *lastView;
 @property (strong, nonatomic) CNCNOpration *opration;
 
-@property (strong ,nonatomic) NSMutableString * result;
+@property (strong,nonatomic) NSMutableString * result;
 @property (assign,nonatomic) double num1;
 @property (assign,nonatomic) double num2;
 /** 保存结果 */
@@ -251,8 +251,7 @@
         case CNCNLastViewTypeX: // 1/x
             [self handelInverts];
             break;
-        
-    }
+        }
 }
 
 ///--------------------------------------
