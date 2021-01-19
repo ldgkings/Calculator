@@ -92,6 +92,8 @@
 		964F691925B66B0B00EFE1C3 /* ReplaceMe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		964F691B25B66B0B00EFE1C3 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		964F691C25B66B0B00EFE1C3 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
+		964F691D25B66C5F00EFE1C3 /* textObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = textObject.h; sourceTree = "<group>"; };
+		964F691E25B66C5F00EFE1C3 /* textObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = textObject.m; sourceTree = "<group>"; };
 		9D70E6B3241DBAE4FF1DE67D65F8C4A8 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EB8941118CC63E044E536130C1E925B /* WKWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "WKWebView+AFNetworking.m"; path = "UIKit+AFNetworking/WKWebView+AFNetworking.m"; sourceTree = "<group>"; };
@@ -197,6 +199,8 @@
 			children = (
 				964F691825B66B0B00EFE1C3 /* .gitkeep */,
 				964F691925B66B0B00EFE1C3 /* ReplaceMe.m */,
+				964F691D25B66C5F00EFE1C3 /* textObject.h */,
+				964F691E25B66C5F00EFE1C3 /* textObject.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
