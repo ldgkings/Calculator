@@ -23,6 +23,10 @@
 #import "CNCNOpration.h"
 #import "CNCNHandelTool.h"
 
+#import <AFNetworking/AFNetworking.h>
+
+
+
 @interface ViewController ()<CNCNnumberViewDelegate,CNCNHandelViewDelegate,CNCNResultVIewDelegate,CNCNLastViewDelegate,CNCNDataViewDelegate,CNCNFunctionViewDelegate>
 /**	上面显示的label */
 @property (weak ,nonatomic) UILabel *showView;
